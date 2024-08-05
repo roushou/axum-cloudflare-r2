@@ -1,0 +1,15 @@
+[package]
+name = "axum-cloudflare-r2"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aws-config = { version = "1.5.4", features = ["behavior-version-latest"] }
+aws-sdk-s3 = { version = "1.41.0", features = ["rt-tokio"] }
+axum = { version = "0.7.5", features = ["macros", "multipart"] }
+eyre = "0.6.12"
+serde = { version = "1.0.204", features = ["derive"] }
+tokio = { version = "1.38.0", features = ["full"] }
+tower-http = { version = "0.5.2", features = ["trace"] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
