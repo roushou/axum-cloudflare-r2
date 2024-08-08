@@ -4,13 +4,7 @@ This repository is an example of a multipart upload to Cloudflare [R2](https://w
 
 ## Getting started
 
-Launch HTTP server with your environment variables loaded. For example using [dotenvx](https://dotenvx.com/).
-
-```sh
-$ dotenvx run -- cargo run
-```
-
-Environment variables
+Set environment variables.
 
 ```
 R2_ACCOUNT_ID=
@@ -18,4 +12,10 @@ R2_ACCESS_ID=
 R2_ACCESS_SECRET=
 R2_BUCKET_NAME=
 R2_REGION=
+```
+
+Launch HTTP server with your environment variables loaded. For example using [dotenvx](https://dotenvx.com/).
+
+```sh
+$ dotenvx run -- cargo run
 ```
